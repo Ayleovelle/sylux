@@ -1,0 +1,16 @@
+{
+  "id": "T0.5c",
+  "title": "命令复跑白名单负例验证",
+  "severity": "major",
+  "status": "pass",
+  "summary": "15 个危险负例(node/npx/powershell/curl|sh 等)全部被 default-deny 拒绝",
+  "evidencePath": [
+    "fixtures/T0.5c__negative-test.json"
+  ],
+  "metrics": {
+    "total": 15,
+    "leaked": 0
+  },
+  "nextAction": "复跑闸可启用 command-evidence 强核验",
+  "ts": "2026-06-20T13:06:22.519Z"
+}

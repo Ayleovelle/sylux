@@ -1,0 +1,16 @@
+{
+  "id": "T0.5",
+  "title": "kill 杀穿子进程",
+  "severity": "major",
+  "status": "pass",
+  "summary": "2.5s 超时 kill 后进程在 2518ms 内退出",
+  "evidencePath": [
+    "fixtures/T0.5__kill.txt"
+  ],
+  "metrics": {
+    "elapsedMs": 2525,
+    "timedOut": true
+  },
+  "nextAction": "spawnCapture 的 SIGKILL 路径有效,中枢沿用",
+  "ts": "2026-06-20T13:10:06.526Z"
+}

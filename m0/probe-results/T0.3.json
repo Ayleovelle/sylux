@@ -1,0 +1,20 @@
+{
+  "id": "T0.3",
+  "title": "claude stream-json 事件流",
+  "severity": "major",
+  "status": "pass",
+  "summary": "事件类型:system,assistant,result",
+  "evidencePath": [
+    "fixtures/T0.3__stream.jsonl"
+  ],
+  "metrics": {
+    "events": 7,
+    "types": [
+      "system",
+      "assistant",
+      "result"
+    ]
+  },
+  "nextAction": "据事件类型写 claude 端归一化状态机(回填 05)",
+  "ts": "2026-06-20T13:09:56.493Z"
+}

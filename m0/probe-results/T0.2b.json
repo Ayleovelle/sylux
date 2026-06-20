@@ -1,0 +1,11 @@
+{
+  "id": "T0.2b",
+  "title": "M1 dist schema 体积复跑校准",
+  "severity": "major",
+  "status": "inconclusive",
+  "summary": "依赖 M1·T1.2 的 buildAgentOutputJsonSchema dist 产物,M0 阶段尚不存在(两段闸第二段)",
+  "evidencePath": [],
+  "metrics": {},
+  "nextAction": "M1·T1.2 落地后复跑:require 正式 dist,用真实摊平 schema 字节数对比 32KB",
+  "ts": "2026-06-20T13:06:22.509Z"
+}

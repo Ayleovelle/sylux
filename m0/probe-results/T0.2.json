@@ -1,0 +1,16 @@
+{
+  "id": "T0.2",
+  "title": "schema 内联字节下界估 < 32KB",
+  "severity": "major",
+  "status": "pass",
+  "summary": "代表性 discriminatedUnion+optional schema 540B,远低于 32KB 内联上限(下界估,真实更大)",
+  "evidencePath": [
+    "fixtures/T0.2__hard-schema.json"
+  ],
+  "metrics": {
+    "bytes": 540,
+    "limit": 32768
+  },
+  "nextAction": "M1·T1.2 dist 落地后由 T0.2b 用正式 schema 复跑校准",
+  "ts": "2026-06-20T13:06:22.501Z"
+}

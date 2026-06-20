@@ -1,0 +1,24 @@
+{
+  "_comment": "sylux 配置示例:主从模式,claude 当 lead 拆解+验收、codex 当 worker 实现。codex 降 reasoning_effort=low 提速。凭证仍走 auth.json,不写这里。",
+  "agents": {
+    "claude": {
+      "kind": "claude",
+      "timeoutMs": 75000
+    },
+    "codex": {
+      "kind": "codex",
+      "provider": {
+        "model": "gpt-5.5",
+        "reasoning_effort": "low",
+        "name": "your-relay",
+        "base_url": "https://your-relay.example.com",
+        "wire_api": "responses",
+        "requires_openai_auth": true
+      },
+      "timeoutMs": 120000
+    }
+  },
+  "playbook": "lead-worker",
+  "roles": { "a": "claude", "b": "codex" },
+  "stop": { "maxRounds": 6, "convergence": true }
+}

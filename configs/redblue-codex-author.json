@@ -1,0 +1,24 @@
+{
+  "_comment": "sylux 配置示例:红蓝对抗,codex 当 author 出方案、claude 当 critic 砸。注意:凭证(key)绝不写这里,只放 CODEX_HOME/auth.json 与环境变量。",
+  "agents": {
+    "codex": {
+      "kind": "codex",
+      "provider": {
+        "model": "gpt-5.5",
+        "reasoning_effort": "medium",
+        "name": "your-relay",
+        "base_url": "https://your-relay.example.com",
+        "wire_api": "responses",
+        "requires_openai_auth": true
+      },
+      "timeoutMs": 120000
+    },
+    "claude": {
+      "kind": "claude",
+      "timeoutMs": 75000
+    }
+  },
+  "playbook": "red-blue",
+  "roles": { "a": "codex", "b": "claude" },
+  "stop": { "maxRounds": 6, "convergence": true }
+}

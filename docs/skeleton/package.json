@@ -1,0 +1,35 @@
+{
+  "name": "@sylux/shared",
+  "version": "0.1.0",
+  "private": true,
+  "description": "sylux 黑板协议唯一权威类型契约(02)。Message/Evidence/Round/BoardState/AgentEvent + zod schema + jsonl 编解码。",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./types.js": {
+      "types": "./dist/types.d.ts",
+      "import": "./dist/types.js"
+    }
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -b",
+    "typecheck": "tsc --noEmit",
+    "clean": "rimraf dist"
+  },
+  "dependencies": {
+    "zod": "~3.23.8",
+    "zod-to-json-schema": "~3.23.5"
+  },
+  "devDependencies": {
+    "@types/node": "~22.10.0",
+    "typescript": "~5.7.2"
+  }
+}

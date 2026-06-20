@@ -1,0 +1,24 @@
+{
+  "name": "sylux",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "description": "本地多智能体调度中枢:让 Claude Code 与 Codex 两个 CLI 在隔离环境里协同干活。四范式 + 配置层 + 收敛检测 + Web 观战面板。",
+  "bin": {
+    "sylux": "src/run.mjs"
+  },
+  "scripts": {
+    "start": "node src/run.mjs",
+    "accept": "node src/accept.mjs",
+    "test:converge": "node src/converge-test.mjs",
+    "test:server": "node src/server-test.mjs",
+    "test:fault": "node src/fault-test.mjs",
+    "matrix": "node src/matrix.mjs --allow-network",
+    "health": "node src/health.mjs",
+    "m0": "node m0/run.mjs",
+    "m0:gate": "node m0/run.mjs gate"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

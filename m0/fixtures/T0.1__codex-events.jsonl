@@ -1,0 +1,3 @@
+{"type":"thread.started","thread_id":"019ee531-b876-7db1-8f5f-7dd41cffd741"}
+{"type":"turn.started"}
+{"type":"error","message":"Reconnecting... 1/5 (unexpected status 502 Bad Gateway: Upstream request failed, url: https://api.mouubox.com/responses, request id: dc168f27-91fc-4773-beb3-37ca418953cb)"}

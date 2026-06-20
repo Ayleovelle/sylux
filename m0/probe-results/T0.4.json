@@ -1,0 +1,16 @@
+{
+  "id": "T0.4",
+  "title": "claude --session-id 预设",
+  "severity": "major",
+  "status": "pass",
+  "summary": "预设被接受",
+  "evidencePath": [
+    "fixtures/T0.4__session.json"
+  ],
+  "metrics": {
+    "supported": true,
+    "rejected": false
+  },
+  "nextAction": "中枢可预生成 UUID 复用",
+  "ts": "2026-06-20T13:10:03.996Z"
+}

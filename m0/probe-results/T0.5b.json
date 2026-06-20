@@ -1,0 +1,23 @@
+{
+  "id": "T0.5b",
+  "title": "沙箱出网(唯一硬阻断)",
+  "severity": "blocker",
+  "status": "pass",
+  "summary": "两模式均未出网:{\"read-only\":{\"reached\":false,\"code\":null},\"workspace-write\":{\"reached\":false,\"code\":0}}",
+  "evidencePath": [
+    "fixtures/T0.5b__read-only.jsonl",
+    "fixtures/T0.5b__workspace-write.jsonl"
+  ],
+  "metrics": {
+    "read-only": {
+      "reached": false,
+      "code": null
+    },
+    "workspace-write": {
+      "reached": false,
+      "code": 0
+    }
+  },
+  "nextAction": "断网兜底成立,可进 M1",
+  "ts": "2026-06-20T13:20:32.247Z"
+}

@@ -1,0 +1,46 @@
+name: '🎉 功能建议'
+description: 提交建议帮助我们改进。
+title: '[Feature] '
+labels: ['type/feat']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢您抽出时间提出新功能建议，请准确解释您的想法。
+
+  - type: textarea
+    attributes:
+      label: 描述
+      description: 简短描述您的功能建议。
+      placeholder: 请简要说明你希望新增、改进或调整的功能。
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: 使用场景
+      description: 这个功能解决什么问题？
+      placeholder: 一个清晰且具体的描述这个功能的使用场景。
+    validations:
+      required: true
+
+  - type: dropdown
+    attributes:
+      label: 涉及模块
+      options:
+        - '引擎 / 剧本 (engine/playbooks)'
+        - '适配器 (adapters)'
+        - '配置层 (config)'
+        - '收敛检测 (converge)'
+        - 'Web 面板 (server/panel)'
+        - 'CLI (run.mjs)'
+        - '其他'
+    validations:
+      required: true
+
+  - type: checkboxes
+    attributes:
+      label: Code of Conduct
+      options:
+        - label: 我已阅读并同意遵守该项目的行为准则。
+          required: true

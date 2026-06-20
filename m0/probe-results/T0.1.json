@@ -1,0 +1,17 @@
+{
+  "id": "T0.1",
+  "title": "两端复杂 schema 成形",
+  "severity": "major",
+  "status": "inconclusive",
+  "summary": "codex:no output: TypeError: Cannot read properties of nul | claude:parse fail: SyntaxError: Unexpected token '诶', \"诶要我干这种活也行…\"... is not va",
+  "evidencePath": [
+    "fixtures/T0.1__codex-events.jsonl",
+    "fixtures/T0.1__claude-out.json"
+  ],
+  "metrics": {
+    "codexOk": false,
+    "claudeOk": false
+  },
+  "nextAction": "两端都没成形,需排查",
+  "ts": "2026-06-20T13:24:57.012Z"
+}
